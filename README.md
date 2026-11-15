@@ -624,7 +624,7 @@ MIT License - see LICENSE file for details.
 
 - Documentation: [https://translationsapi.com/docs](https://translationsapi.com/docs)
 - API Status: [https://translationsapi.com/status](https://translationsapi.com/status)
-- GitHub Issues: [https://github.com/translations-api/sdk-js/issues](https://github.com/translations-api/sdk-js/issues)
+- GitHub Issues: [https://github.com/stephenhodgkiss/translations-api-js/issues](https://github.com/stephenhodgkiss/translations-api-js/issues)
 - Email: support@translationsapi.com
 
 ## Changelog
