@@ -1,4 +1,4 @@
-# @translations-api/client
+# translationsapi-client
 
 TypeScript/JavaScript client for Translations API - Multi-language translation management with DeepL integration.
 
@@ -19,21 +19,21 @@ TypeScript/JavaScript client for Translations API - Multi-language translation m
 ## Installation
 
 ```bash
-npm install @translations-api/client
+npm install translationsapi-client
 ```
 
 ```bash
-yarn add @translations-api/client
+yarn add translationsapi-client
 ```
 
 ```bash
-pnpm add @translations-api/client
+pnpm add translationsapi-client
 ```
 
 ## Quick Start
 
 ```typescript
-import { TranslationClient } from '@translations-api/client';
+import { TranslationClient } from 'translationsapi-client';
 
 // Initialize the client
 const client = new TranslationClient('your_api_key_here');
@@ -311,7 +311,7 @@ import {
   ValidationException,
   AuthenticationException,
   QuotaExceededException
-} from '@translations-api/client';
+} from 'translationsapi-client';
 
 try {
   const translation = await client.translate('Welcome', 'es');
@@ -338,7 +338,7 @@ try {
 The SDK includes a React hook for easy integration with React components:
 
 ```tsx
-import { useTranslation } from '@translations-api/client/examples/react-hook';
+import { useTranslation } from 'translationsapi-client/examples/react-hook';
 
 function MyComponent() {
   const { translate, isLoading, error } = useTranslation({
@@ -368,7 +368,7 @@ function MyComponent() {
 For managing custom translations in React:
 
 ```tsx
-import { useCustomTranslations } from '@translations-api/client/examples/react-hook';
+import { useCustomTranslations } from 'translationsapi-client/examples/react-hook';
 
 function MyTranslations() {
   const { 
@@ -408,7 +408,7 @@ The SDK provides helpers for Next.js App Router:
 ### Server-Side Translation
 
 ```typescript
-import { getTranslatedProps } from '@translations-api/client/examples/nextjs-middleware';
+import { getTranslatedProps } from 'translationsapi-client/examples/nextjs-middleware';
 
 export async function getServerSideProps({ query }) {
   const { lang = 'en' } = query;
@@ -435,7 +435,7 @@ export async function getServerSideProps({ query }) {
 ### Dictionary-Based Translation
 
 ```typescript
-import { getDictionary, getAllDictionaries } from '@translations-api/client/examples/nextjs-middleware';
+import { getDictionary, getAllDictionaries } from 'translationsapi-client/examples/nextjs-middleware';
 
 // Load dictionary for a language (cached for 24 hours)
 const dictionary = await getDictionary('es', 'common', apiKey, 86400);
@@ -448,7 +448,7 @@ const dictionaries = await getAllDictionaries(['es', 'fr', 'de'], 'common', apiK
 ### Middleware
 
 ```typescript
-import { createTranslationMiddleware } from '@translations-api/client/examples/nextjs-middleware';
+import { createTranslationMiddleware } from 'translationsapi-client/examples/nextjs-middleware';
 
 export const config = {
   matcher: ['/((?!api|_next/static|_next/image|favicon.ico).*)']
@@ -603,7 +603,7 @@ import type {
   UploadResult,
   PaginatedStrings,
   UserStats
-} from '@translations-api/client';
+} from 'translationsapi-client';
 ```
 
 ## Browser Support

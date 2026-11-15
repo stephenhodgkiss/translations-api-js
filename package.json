@@ -1,5 +1,5 @@
 {
-  "name": "@translations-api/client",
+  "name": "translationsapi-client",
   "version": "1.0.0",
   "homepage": "https://translationsapi.com",
   "description": "TypeScript/JavaScript client for Translations API - Multi-language translation management with DeepL integration",
