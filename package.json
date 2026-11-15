@@ -1,0 +1,60 @@
+{
+  "name": "@translations-api/client",
+  "version": "1.0.0",
+  "description": "TypeScript/JavaScript client for Translations API - Multi-language translation management with DeepL integration",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "prepublishOnly": "npm run build",
+    "test": "node --test examples/test.js"
+  },
+  "keywords": [
+    "translation",
+    "i18n",
+    "localization",
+    "deepl",
+    "translations-api",
+    "multilingual",
+    "language"
+  ],
+  "author": "Translations API",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/translations-api/sdk-js.git"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.42",
+    "@types/react": "^18.2.0",
+    "next": "^16.2.9",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "typescript": "^5.3.3"
+  },
+  "peerDependencies": {
+    "next": ">=14.0.0",
+    "react": ">=18.0.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    },
+    "next": {
+      "optional": true
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ]
+}
